@@ -21,14 +21,14 @@ int pop()
 {
 if(top==NULL)
 {
-cout<<"stack empty";
+cout<<"stack empty!!!";
 getch();
 }
 else
 {
 int temp=top->data;
 top=top->next;
-cout<<"poped element is"<<endl;
+cout<<"poped element is:"<<endl;
 return(temp);
 
 }
@@ -37,7 +37,7 @@ void display()
 {
 struct stack *nw=NULL;
 nw=top;
-cout<<"stack element are: -->";
+cout<<"stack elements are: -->";
 while(nw!=NULL)
 {
 cout<<nw->data;
